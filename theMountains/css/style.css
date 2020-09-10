@@ -1,0 +1,188 @@
+/*
+HTML TAGS
+*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Catamaran';
+}
+header{
+    width: 100%;
+}
+footer{
+    width: 100%;
+    padding: 2em 0 5em;
+    background: url(../images/05.webp);
+    background-size: cover;
+    background-position: center bottom;
+    text-align: center;
+}
+/* positioning: position, z-index, bottom, top, left, right */
+/* display & box model: display, overflow, box-sizing, width, height, padding, margin, border */
+/* color: background, color */
+/* text: font-family,font-size, line-height, text-align */
+/* other: cursor */
+/*
+CLASSES
+*/
+
+/* NAV */
+.top-bar{
+    width: 100%;
+    padding: .1em 0;
+    background: #000;
+}
+.top-text{
+    padding: 0;
+    font-weight: 900;
+    font-size: .8em;
+    text-transform: uppercase;
+    color: #fff;
+}
+.logo{
+    float: left;
+    padding: 0em .5em;
+    margin: 0em;
+}
+
+/* INTRO */
+.intro-section{
+    width: 100%;
+    padding: 11.6em 0 8em;
+    background: url(../images/09.webp);
+    background-size: cover;
+    background-position: center bottom;
+}
+.intro-tittle{
+    padding: 0 1em;
+    font-weight: 900;
+    text-align: left;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    color: #fff;
+}
+.detail-btn{
+    display: block;
+    margin: auto;
+    width: 8em;
+    padding: 1em;
+    text-align: center;
+    background: #ff690f;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/* ABOUT */
+.about-section{
+    padding: 1em 2em;
+    background: #fff;
+    color:#000;
+    text-align: center;
+}
+.about-tittle{
+    font-weight: 900;
+    font-size: 1.9em;
+    color: #333;
+}
+.about-text{
+    font-weight: 400;
+    font-size: 1em;
+}
+.about-img{
+    padding: 4em 0 .5em;
+}
+.about-question{
+    padding: 0;
+    font-weight: 400;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.about-service{
+    padding: 0;
+    font-weight: 900;
+    font-size: 2em;
+}
+.about-btn{
+    display: block;
+    margin: auto;
+    width: 10em;
+    padding: 1em;
+    border-radius: .4em;
+    text-align: center;
+    background: #ff690f;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 900;
+}
+.img{
+    width: 110%;
+    padding: 4em 0;
+}
+.about-tittle2{
+    padding: 0;
+    font-weight: 900;
+    font-size: 2em;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    color: #000;
+}
+.about-form{
+    width: 90%;
+    margin: auto;
+}
+.row{
+    width: 100%;
+}
+.col{
+    width: 50%;
+    float: left;
+}
+.num{
+    padding: 0em;
+    font-weight: 900;
+    font-size: 3em;
+    color: #ff690f;
+}
+.text-num{
+    font-weight: 400;
+    font-size: 1em;
+}
+
+/* QUOTE */
+.quote-section{
+    padding: 1em;
+    text-align: center;
+}
+.quote-tittle{
+    font-weight: 900;
+    font-size: 1.5em;
+}
+.quote-text{
+    padding: 0 3em;
+    font-weight: 400;
+    font-size: .7em;
+}
+
+/* FOOTER */
+.footer-tittle{
+    font-weight: 900;
+    font-size: 3em;
+    color: #fff;
+}
+.bottom-nav{
+    padding: 0em;
+    margin: 0em;
+}
+.bottom-nav-item{
+    display: inline-block;
+    margin: 1em 1.3em;
+}
+.footer-link{
+    font-size: 1.5em;
+    color: #fff;
+}
+.footer-link:hover{
+    color: #ff690f;
+}
