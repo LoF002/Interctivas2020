@@ -11,7 +11,7 @@ header{
 }
 footer{
     width: 100%;
-    padding: 2em 0 5em;
+    padding: 4em 0;
     background: url(../images/05.webp);
     background-size: cover;
     background-position: center bottom;
@@ -116,9 +116,20 @@ CLASSES
     text-decoration: none;
     font-weight: 900;
 }
+
+/* IMG */
 .img{
-    width: 110%;
-    padding: 4em 0;
+    width: 100%;
+    padding: 2em 0 0;
+    margin: 0em;
+}
+
+/* REWARD */
+.reward-section{
+    padding: 1em 2em;
+    background: #fff;
+    color:#000;
+    text-align: center;
 }
 .about-tittle2{
     padding: 0;
@@ -141,11 +152,13 @@ CLASSES
 }
 .num{
     padding: 0em;
+    margin: 0em;
     font-weight: 900;
     font-size: 3em;
     color: #ff690f;
 }
 .text-num{
+    margin: 0em;
     font-weight: 400;
     font-size: 1em;
 }
@@ -166,7 +179,14 @@ CLASSES
 }
 
 /* FOOTER */
+.footer-logo{
+    padding: 0em;
+    margin: 0em;
+    width: 20%;
+}
 .footer-tittle{
+    margin: 0em;
+    padding: 0em;
     font-weight: 900;
     font-size: 3em;
     color: #fff;
@@ -177,7 +197,7 @@ CLASSES
 }
 .bottom-nav-item{
     display: inline-block;
-    margin: 1em 1.3em;
+    margin: 0 1.3em;
 }
 .footer-link{
     font-size: 1.5em;
@@ -185,4 +205,20 @@ CLASSES
 }
 .footer-link:hover{
     color: #ff690f;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px){
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px){
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px){
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px){
 }

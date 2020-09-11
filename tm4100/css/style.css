@@ -238,11 +238,53 @@ CLASSES
     hr{
         width: 4em;
     }
+    .top-bar{
+        position: fixed;
+        padding: .5em 0 .5em;
+        z-index: 1;
+    }
+    .mob-menu{
+        display: block;
+        color: #fff;
+        font-size: 1.5em;
+        position: absolute;
+        top: .6em;
+        left: .5em;
+    }
+    .mob-close{
+        display: block;
+        color: #fff;
+        font-size: 2em;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
     .top-nav{
-        display: none;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        width: 100%;
+        left: -25em;
+        height: 100%;
+        background: #181b1e;
+        transition: .5s;
+        z-index: 2;
+    }
+    .top-nav-item{
+        display: block;
+    }
+    .top-nav-link{
+        padding: 1em;
+        font-size: 1.3em;
+    }
+    .request-btn{
+        font-size: 1.3em;
+    }
+    .request-btn-m{
+        margin: 0;
     }
     .intro-section{
-        padding: 2em 0;
+        padding: 3em 0;
     }
     .intro-title{
         font-size: 2em;
@@ -283,5 +325,4 @@ CLASSES
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px){
-
 }
