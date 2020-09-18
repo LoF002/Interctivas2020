@@ -210,6 +210,10 @@ CLASSES
     background: #00bad2;
     color: #fff;
 }
+.error{
+    background-color: #ffffdd;
+    border: 2px solid #D8000C;
+}
 
 /* FOOTER */
 .bottom-nav{
