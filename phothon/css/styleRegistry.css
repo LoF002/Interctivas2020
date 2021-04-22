@@ -1,0 +1,351 @@
+
+*{
+ margin: 0;
+ padding: 0;
+ font-family: 'Spartan';
+ 
+}
+
+
+
+.container{
+    
+    width: 100%;
+    height: 105%;
+    background: url(../images/fondo2.webp);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+   
+  
+}
+.logo{
+    margin: 0 0 0 3em;
+    width:  124px;
+}
+.mob-menu{
+    display: none;
+}
+.mob-close{
+    display: none;
+}
+.top-bar{
+    width: 100%;
+    padding: 0em 10px;
+    margin: 1em 0 0 0;
+    background: rgba(250, 250, 250, .7);
+}
+.top-nav{
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+.top-nav-item{
+    display: inline-block;
+    margin: 0 .5em;
+}
+.top-nav-link{
+    display: block;
+    color: #000000;
+    text-decoration: none;
+}
+.top-nav-link:hover{
+    color: #fe0000;
+    padding: 1em;
+    background: rgba(250, 250, 250, .7);
+    border-radius: .5em;
+}
+.search-item{
+    border-radius: .3em;
+    padding: .5em .5em;
+    margin: .5em 2em 1em 0;
+    background: #ffffff;
+}
+.input-search{
+    padding: 1em 1em;
+    margin: 0 .5em 0 0;
+    background: #f4f4f4;
+    border-radius: .2em;
+    border: none;
+}
+.icon-search{
+    border-radius: .3em;
+    padding: .8em;
+    color: #000000;
+    background: #f4f4f4;
+}
+
+
+    
+
+
+    .marco{
+
+        width: 845px;
+        height: 355px;
+        position: relative;
+        margin: -1% auto;
+        background:  #ffffff;
+        padding: 5px;
+        left: 10px;
+        z-index: 1;
+
+    }
+
+    .barra{
+        width: 1500px;
+        height: 65px;
+        position: relative;
+        margin: -10% auto;
+        background: #d84315 ;
+        padding: 5px;
+        left: -27px;
+        
+    }
+
+
+
+
+    
+    .input-group{
+        height: 01px;
+        top: 52px;
+        position: absolute;
+        width: 373px;
+        left: -30px;
+        border-radius: 22px;
+    
+
+       }
+
+       .input-group1{
+        height: 01px;
+        top: 52px;
+        position: absolute;
+        width: 844px;
+        left: 180px;
+        border-radius: 22px;
+   
+       }
+
+       .input-group2{
+        height: 01px;
+        top: 52px;
+        position: absolute;
+        width: 567px;
+        left: 528px;
+        border-radius: 22px;
+   
+       }
+       .input-field{
+        width: 32%;
+        padding: 16px 1px;
+        margin:4px 75px;
+        border-left: 0 ;
+        border-top: 0;
+        border-right: 0;
+        background: rgba(250, 250, 250, .7) ;
+        border-radius: 8px;
+        outline: none;
+      
+    }
+    .submit-btn2{
+
+        top: 81px;
+        width: 22%;
+        padding: 8px 30px;
+        cursor: pointer;
+        display: block;
+        margin: 192px 310px;
+        background: #000000;
+        border: -5px;
+        outline: none;
+        border-radius: 30px;
+        color: #ffffff ;
+   
+
+    }
+    h1{
+    
+    color:#000000;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Spartan';
+    padding: 8px 223px;
+    margin: 17px 37px;
+    
+    
+    }
+
+    h2{
+    
+        color:#000000;
+        font-weight: normal;
+        font-size: 14px;
+        font-family: 'Spartan';
+        padding: 8px 223px;
+        margin: 13px -147px;
+    }
+
+   
+   h3{
+   
+    color:#000000;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: 'Spartan';
+    padding: 8px 223px;
+    margin: -44px 119px;
+   }
+
+   h4{
+   
+    color:#000000;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: 'Spartan';
+    padding: -15em 27em;
+    margin: 22px -0.5em -80px 657px;
+   }
+
+   form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 1rem;
+        max-width: 1000%;
+        z-index: 2;
+
+
+   }
+
+
+   @media screen and (max-width:575.98px){
+
+    .container{
+        grid-template-columns: repeat(2,irf);
+        width: 397%;
+        height: 403%;
+        background: url(../images/fondo2.webp);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+       
+     
+    }
+
+    .marco{
+        grid-template-columns: repeat(3,irf);
+        width: 394px;
+        height: 327px;
+        position: relative;
+        margin: -1% auto;
+        background:  #ffffff;
+        padding: 7px;
+        left: -614px;
+        top: 205px;
+
+    }
+    .logo{
+        margin: 0 0 0 1.5em;
+        width: 94px;
+        height: 44px;
+    }
+    .mob-menu{
+        display: block;
+        color: #000000;
+        font-size: 2.5em;
+        position: absolute;
+        top: .9em;
+        left: 8em;
+    }
+    .mob-close{
+        display: block;
+        color: #000000;
+        font-size: 2em;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
+    .top-nav{
+        position: fixed;
+        top: 0;
+        left: 24em;
+        width: 100%;
+        height: 100%;
+        padding: 3em 0 0;
+        background: #f4f4f4;
+        transition: .5s;
+        text-align: center;
+        z-index: 2;
+    }
+    .top-nav-item{
+        display: block;
+    }
+    .top-nav-link{
+        padding: 1.5em;
+        font-size: 1.3em;
+    }
+    .search-item{
+        margin: .5em 0;
+    }
+    .input-search{
+        padding: 1em;
+        font-size: 1.3em;
+    }
+    .icon-search{
+        padding: 1em;
+        font-size: 1.3em;
+    }
+
+    h1{
+    
+        color:#000000;
+        font-weight: bold;
+        font-size: 35px;
+        padding: -15em 27em;
+        margin: 42px 25.5em -140px -480px;
+        
+        
+        }
+
+        h2{
+            font-size: 14px;
+            font-weight: normal;
+            margin: 144px 49.5em -186px -523px;
+           }
+
+
+           .input-group{
+            height: 87px;
+            top: 52px;
+            position: absolute;
+            width: 361px;
+            left: 5px;
+            border-radius: 22px;
+        
+            
+            
+       
+           }
+
+
+           .submit-btn2{
+            top: 81px;
+            width: 101%;
+            padding: 7px 48px;
+            cursor: pointer;
+            display: block;
+            margin: 114px 120px;
+            background: #000000;
+            border: -5px;
+            outline: none;
+            border-radius: 30px;
+            color: #ffffff ;
+       
+
+
+           }
+
+   }

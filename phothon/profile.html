@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>document </title>
+    <link rel="stylesheet" href="./css/styleProfile.css">
+</head>
+<body> 
+    <header>
+        <nav class="top-bar">
+            <a href="./index.html">
+                <img class="logo" src="./images/logo.png" alt="logo">
+            </a>
+            <span class="mob-menu fas fa-bars" onclick="openMobileMenu()"></span>
+            <ul class="top-nav">
+                <span class="mob-close far fa-times-circle" onclick="closeMobileMenu()"></span>
+                <li class="top-nav-item"><a class="top-nav-link" href="./index.html">Home</a></li>
+                <li class="top-nav-item"><a class="top-nav-link" href="./galery.html">Information</a></li>
+                <li class="top-nav-item"><a class="top-nav-link" href="#">Contact</a></li>
+
+                <li class="top-nav-item">
+                    <div class="search-item">
+                        <input class="input-search" type="text" placeholder="Search">
+                        <a class="icon-search" href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="profile-section">
+
+        <div class="container">
+            <ul class="row-info">
+                <li class="col-info"><img class="photo-profile" src="./images/perfil.webp" alt="photo"></li>
+                <li class="col-info"><h1 class="tittle">Profile</h1><p>User</p></li>
+            </ul>
+
+            <ul class="row-photos">
+                <li class="col">
+                    <div class="container-photo">
+                        <img class="photo" src="./images/cerezo.webp" alt="cerezo">
+                        <p class="info">Tittle</p>
+                    </div>
+                </li>
+    
+                <li class="col">
+                    <div class="container-photo">
+                        <img class="photo" src="./images/cerezo.webp" alt="cerezo">
+                        <p class="info">Tittle</p>
+                    </div>
+                </li>
+    
+                <li class="col">
+                    <div class="container-photo">
+                        <img class="photo" src="./images/cerezo.webp" alt="cerezo">
+                        <p class="info">Tittle</p>
+                    </div>
+                </li>
+                <li class="col">
+                    <div class="container-photo">
+                        <img class="photo" src="./images/cerezo.webp" alt="cerezo">
+                        <p class="info">Tittle</p>
+                    </div>
+                </li>
+    
+                <li class="col">
+                    <div class="container-photo">
+                        <img class="photo" src="./images/cerezo.webp" alt="cerezo">
+                        <p class="info">Tittle</p>
+                    </div>
+                </li>
+    
+                <li class="col">
+                    <div class="container-photo">
+                        <img class="photo" src="./images/cerezo.webp" alt="cerezo">
+                        <p class="info">Tittle</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    
+    </section>
+           
+<script>
+
+    function openMobileMenu(){
+        let nav = document.body.getElementsByClassName('top-nav')[0];
+        nav.style.left="0";
+    }//Fin funtion
+
+    function closeMobileMenu(){
+        let nav = document.body.getElementsByClassName('top-nav')[0];
+        nav.style.left="24em";
+    }
+
+</script>
+
+</body>
+</html>

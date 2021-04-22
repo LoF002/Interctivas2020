@@ -1,0 +1,120 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.5
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:3306
+-- Generation Time: Dec 04, 2020 at 12:19 PM
+-- Server version: 5.7.24
+-- PHP Version: 7.4.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `phothon`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_photos`
+--
+
+CREATE TABLE `tb_photos` (
+  `id_photo` int(10) NOT NULL,
+  `tittle` varchar(60) NOT NULL,
+  `description` text NOT NULL,
+  `category` enum('Aerea','People','Nature','Landscape') NOT NULL,
+  `image` varchar(100) NOT NULL,
+  `id_user` int(100) NOT NULL,
+  `status` varchar(10) NOT NULL,
+  `submit_at` datetime NOT NULL,
+  `approved_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tb_photos`
+--
+
+INSERT INTO `tb_photos` (`id_photo`, `tittle`, `description`, `category`, `image`, `id_user`, `status`, `submit_at`, `approved_at`) VALUES
+(14, 'Puppy', 'The most beautiful', 'Nature', 'nESFgY2Jt7s8VyueG4wDm0qBI9NzPj5KpcALH6QMfU.jpg', 12, 'Approve', '2020-12-04 05:15:53', '0000-00-00 00:00:00'),
+(20, 'Rain', 'Weather changes', 'Aerea', 'Q6FZsvkqW47BYh0fuE5ciGC9mTtdNUrbwoSxAeMOaI.jpg', 12, 'Approve', '2020-12-04 05:35:18', '0000-00-00 00:00:00'),
+(21, 'Glass', 'All over', 'Nature', 'qHj3KCnoAcM9ZTfk0dOSpP5weNtr827xGD4UFWmBvE.jpg', 12, 'Pending', '2020-12-04 05:48:17', '0000-00-00 00:00:00'),
+(23, 'Jewel', 'Aroma diffuser', 'People', 'pnlqPWvhofK5gmyN9TA4EdZ3JItF7Gc0uY2M6DsH1Q.jpg', 12, 'Pending', '2020-12-04 05:51:58', '0000-00-00 00:00:00'),
+(24, 'photo1', 'description1', 'Aerea', 'itHyQ8oPdc4zWU0hYrEguE5C2XDMLj6bZwmqTalVI3.png', 13, 'Pending', '2020-12-04 05:54:17', '0000-00-00 00:00:00'),
+(25, 'photo2', 'description2', 'Aerea', 'A3kxiCWfnlqPKbXEjT6tQhEYMw9peO5IgaGHVy1vc4.jpeg', 13, 'Pending', '2020-12-04 05:54:43', '0000-00-00 00:00:00'),
+(26, 'photo3', 'description3', 'Aerea', 'zAki9jZdc10bg5h8GPEyfJsNwYm6aUIHX43xuLTVqO.jpg', 13, 'Pending', '2020-12-04 05:57:36', '0000-00-00 00:00:00'),
+(27, 'photo4', 'description4', 'People', 'NI2JHK06yVi1UoLdrjYm3uEzenQacf4tSFx8CD7BWG.png', 13, 'Pending', '2020-12-04 05:58:26', '0000-00-00 00:00:00'),
+(28, 'photo5', 'description5', 'People', '01m5uZl9M4I7KTjag8UenvNBqifyztcOdGPo6HECQk.jpeg', 13, 'Pending', '2020-12-04 06:00:10', '0000-00-00 00:00:00'),
+(29, 'photo6', 'description6', 'People', 'QLgfvyq6aFMstTJGICc3BSnE4VepiOKm5ADbZNzYXU.jpg', 13, 'Pending', '2020-12-04 06:00:36', '0000-00-00 00:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_users`
+--
+
+CREATE TABLE `tb_users` (
+  `id_user` int(100) NOT NULL,
+  `name` varchar(60) NOT NULL,
+  `username` varchar(60) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `type` varchar(100) NOT NULL,
+  `registered_at` datetime NOT NULL,
+  `last_login_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tb_users`
+--
+
+INSERT INTO `tb_users` (`id_user`, `name`, `username`, `email`, `password`, `type`, `registered_at`, `last_login_at`) VALUES
+(11, 'prueba1', 'prueba1', 'prueba1@gmail.com', 'prueba1', 'admin', '2020-12-04 05:12:28', '2020-12-04 06:04:07'),
+(12, 'prueba2', 'prueba2', 'prueba2@gmail.com', 'prueba2', 'admin', '2020-12-04 05:14:07', '2020-12-04 06:05:08'),
+(13, 'prueba3', 'prueba3', 'prueba3@gmail.com', 'prueba3', 'admin', '2020-12-04 05:53:44', '2020-12-04 06:06:51');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `tb_photos`
+--
+ALTER TABLE `tb_photos`
+  ADD PRIMARY KEY (`id_photo`);
+
+--
+-- Indexes for table `tb_users`
+--
+ALTER TABLE `tb_users`
+  ADD PRIMARY KEY (`id_user`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tb_photos`
+--
+ALTER TABLE `tb_photos`
+  MODIFY `id_photo` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+
+--
+-- AUTO_INCREMENT for table `tb_users`
+--
+ALTER TABLE `tb_users`
+  MODIFY `id_user` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

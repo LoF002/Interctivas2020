@@ -1,0 +1,23 @@
+﻿Se cuenta con un participante nuevo y que no haya enviado aún ninguna fotografía.
+Usuario para caso de prueba: prueba1
+Contraseña: prueba1
+
+
+Se cuenta con un participante que ha enviado 2 fotos en al menos una categoría.
+Usuario para de prueba: prueba2
+Contraseña: prueba2
+
+
+Se cuenta con un participante que ha votado por 3 fotos.
+Usuario para de prueba:
+Contraseña:
+
+
+Se cuenta con un participante que ha enviado una foto pero aún no ha sido aprobada.
+Usuario para caso de prueba: prueba2
+Contraseña: prueba2
+
+
+Se cuenta con un participante que ha enviado la cantidad máxima de fotos en todas las categorías.
+Usuario para caso de prueba: prueba3
+Contraseña: prueba3

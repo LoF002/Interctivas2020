@@ -1,0 +1,213 @@
+
+*{
+ margin: 0;
+ padding: 0;
+ font-size: 14px;
+ font-family: 'Spartan';
+}
+
+
+
+.container{
+    
+    width: 100%;
+    height: 100%;
+    background: url(../images/fondo1.webp);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+   
+  
+}
+
+
+.botton1{
+    width: 351px;
+    height: 462px;
+    position: relative;
+    margin: 8% auto;
+    background: rgba(250, 250, 250, 0.5) ;
+    padding: 5px;
+    left: -27px;
+    border-radius: 22px;
+    overflow: hidden;
+    
+
+}
+
+.botton2{
+
+width: 177px;
+margin: 91px auto;
+position: relative;
+box-shadow: 1 0 20px 9px #e0e0e0;
+border-radius: 30px;
+
+
+
+}
+
+.btn{
+
+    padding: 12px 16px;
+    cursor: pointer;
+    background: transparent;
+    border: 0px;
+    outline:none ;
+    position: relative;
+    
+    }
+
+    #escoger{
+     top: 40px;
+     left: 16px;
+     position: absolute;
+     width: 53px;
+     height: 4%;
+     background-color: tomato;
+    border: 10px;
+    transition: 0,5s;
+    }
+
+    .logo-phothon{
+
+     margin: -206px ;
+     text-align: center;
+
+    }
+
+    .logo-phothon img{
+    width:  78px;
+    margin: 0 12px;
+    top: 0px;
+    box-shadow: 1 0 20px;
+    cursor: pointer;
+    
+    }
+
+    .input-group{
+     top: 147px;
+     position: absolute;
+     width: 265px;
+     left: 47px;
+     transition: 0.5s;
+     border-radius: 22px;
+     
+     
+
+    }
+    .input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin:11px 0;
+    border-left: 0 ;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px #eeeeee;
+    border-radius: 8px;
+    outline: none;
+    
+
+    }
+
+    .submit-btn{
+        top: 54px;
+     width: 38%;
+     padding: 14px 35px;
+     cursor: pointer;
+     display: block;
+     margin: -8px 74px;
+     background:#e0e0e0 ;
+     border: 0px;
+     outline: none;
+     border-radius: 30px;
+
+
+    }
+    .submit-btn2{
+
+        top: 81px;
+        width: 54%;
+        padding: 11px 18px;
+        cursor: pointer;
+        display: block;
+        margin: 8px 52px;
+        background:#e0e0e0 ;
+        border: 0px;
+        outline: none;
+        border-radius: 30px;
+   
+
+    }
+
+    .check-box{
+        margin: 15px 10px 30px 38px;
+
+    }
+
+
+.input-group a{
+    font-size: 14px;
+    line-height: 47px;
+    top: 0px;
+    margin: 20px 10px;
+    left: 0px;
+    color: #000000;
+}
+
+#login{
+
+left: 51px;
+
+}
+
+#registro{
+
+left: 390px;
+
+
+}
+
+
+
+#opcion2{
+    width: 125px;
+    padding: 1px 0;
+    margin: -14px 21px;
+    border-left: 0 ;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px #eeeeee;
+    border-radius: 6px;
+    outline: none;
+
+
+}
+
+
+/*  Parte movil*/
+
+@media screen and (max-width:575.98px){
+
+    .container{
+        background: url(../images/fondoMovil1.webp);
+        background-size: cover;
+
+    }
+
+    .botton1{
+        width: 344px;
+        height: 470px;
+        position: relative;
+        margin: 31% auto;
+        background: rgba(250, 250, 250, 0.5) ;
+        padding: 4px;
+        left: 0px;
+        border-radius: 22px;
+        overflow: hidden;
+        
+    
+    }
+    
+
+}
