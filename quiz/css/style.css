@@ -1,0 +1,79 @@
+/* TAG */
+body{
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+/* CLASS */
+.container {
+    position: relative;
+    width: 525.75px;
+    height: 626px;
+    margin: auto;
+    overflow: hidden;
+    background: #fff;
+}
+.carp{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../image/carp.webp);
+}
+.score{
+    position: absolute;
+    top: 144px;
+    left: 224px;
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+}
+.container-ducks{
+    position: relative;
+    width: 403.438px;
+    height: 225.213px;
+    top: 231px;
+    left: 60px;
+    overflow: hidden;
+}
+.duck{
+    width: 93.066px;
+    height: 84.035px;
+    background: url(../image/duck.webp);
+    float: left;
+    margin: 0 10px;
+}
+.top-ducks{
+    position: absolute;
+    left: 320px;
+    top: 34px;
+    height: 84px;
+}
+.bottom-ducks{
+    position: absolute;
+    left: 300px;
+    top: 109px;
+    height: 84px;
+}
+.top-water{
+    position: absolute;
+    top: 98px;
+    width: 416.367px;
+    height: 157.286px;
+}
+.bottom-water{
+    position: absolute;
+    top: 172px;
+    width: 416.367px;
+    height: 80.299px;
+}
+.water1{
+    width: 416.367px;
+    height: 157.286px;
+    background: url(../image/water-top.webp);
+}
+.water2{
+    width: 416.367px;
+    height: 80.299px;
+    background: url(../image/water-bottom.webp);
+}
