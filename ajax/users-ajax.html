@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX - users</title>
+</head>
+<body>
+
+    <script>
+
+        function randomUser(){
+            return "user" + Math.round( Math.random()*1000 );
+        }
+
+        let info = {
+            username: randomUser(),
+            password: "pwd123",
+            user_email: "email"+randomUser()+"@email.com"
+        };
+
+        console.log(info.username + " - "+ info.password + " - " + info.user_email);
+
+        document.addEventListener('DOMContentLoaded', (event) =>{
+
+            console.log("DOM loaded");
+
+            fetch("http://localhost:8888/tm4100/php/books/users/", {
+                method: 'POST',
+                mode: "same-origin",
+                credentials: "same-origin",
+                headers: {
+                    'Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(info)
+            })
+            .then(response => response.json())
+            .then(data => {
+                
+                console.log(data);
+                
+            })
+
+        });
+        
+    </script>
+
+</body>
+</html>

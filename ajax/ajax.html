@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>AJAX - call</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Registered books</h1>
+       
+        <div class="row">
+            <div class="col col-2 title-gallery">Image</div>
+            <div class="col col-2 title-gallery">Book</div>
+            <div class="col col-2 title-gallery">Author</div>
+            <div class="col col-2 title-gallery">Category</div>
+            <div class="col col-2 title-gallery">Publisher</div>
+        </div>
+       
+    </div>
+    
+
+    <script>
+
+        let items;
+
+        function showBooks(){
+            
+            let len = items.length;
+            
+            let container = document.body.getElementsByClassName('container')[0];
+            
+            for(let i=0; i<len; i++){
+                    
+                let row = document.createElement("div");
+                row.classList.add("row");
+                row.innerHTML = "<div class='col col-2'><img class='img-gallery' src='./images/"+items[i].book_image+"'></div>"+"<div class='col col-2'>"+items[i].book_title+"</div>"+"<div class='col col-2'>"+items[i].author_name+" "+items[0].author_lastname+"</div>"+"<div class='col col-2'>"+items[i].book_category+"</div>"+"<div class='col col-2'>"+items[i].publisher_name+"</div>";
+
+                container.appendChild(row);
+            }
+            
+        }
+
+        document.addEventListener('DOMContentLoaded', (event) =>{
+
+            console.log("DOM loaded");
+
+            fetch("http://localhost:8888/tm4100/php/books/books-response.php")
+                .then(response => response.json())
+                .then(data => {
+                    
+                    console.log(data);
+                    items = data;
+                    //console.log("values -> " + data[0].book_title);
+                    //alert(data[0].book_title);
+                    showBooks();
+                    
+                })
+
+        });
+        //https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=es
+        //https://addons.mozilla.org/es/firefox/addon/jsonview/
+    </script>
+
+</body>
+</html>
