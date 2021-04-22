@@ -1,0 +1,339 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #000;
+   
+}
+.container {
+    position: relative;
+    width: 645px;
+    height: 250px;
+    margin: auto;
+    overflow: hidden;
+}
+#wagon-path {
+    position: absolute;
+    top: 145px;
+    z-index: 4;
+}
+.cloud1{
+    position: absolute;
+    width:72px;
+    height: 33px;
+    background: url(../images/cloud-01.png);
+}
+.cloud2 {
+    position: absolute;
+    width: 60px;
+    height: 27px;
+    background: url(../images/cloud-02.png);
+}
+.cloud3 {
+    position: absolute;
+    width: 71px;
+    height: 31px;
+    background: url(../images/cloud-03.png);
+}
+.cloud4 {
+    position: absolute;
+    width: 37px;
+    height: 19px;
+    background: url(../images/cloud-04.png);
+}
+.robot{
+    position: absolute;
+    top: 204px;
+    left: 470px;
+    width: 40px;
+    height: 32px;
+    background: url(../images/robot.png);
+    background-size: contain;
+    transform: scale(0);
+    z-index: 6;
+}
+.joystick-container{
+    position: absolute;
+    z-index: 5;
+}
+.joystick-top{
+    position: relative;
+    left: 4px;
+    width: 5px;
+    height: 10px;
+    background: url(../images/joystick-top.png);
+}
+.joystick-bottom{
+    width: 15px;
+    height: 6px;
+    background: url(../images/joystick-bottom.png);
+}
+#j01{
+    top: 220px;
+    left: 50px;
+}
+#j02 {
+    top: 216px;
+    left: 170px;
+}
+#j03 {
+    top: 216px;
+    left: 570px;
+}
+#pirate-path {
+    position: absolute;
+    top: 85px;
+    left: -22px;
+    z-index: 4;
+    width: 40%;
+    height: 30%;
+}
+.pirate-container{
+    position:relative;
+    top: 10px;
+    z-index: 2;
+}
+.pirate-top{
+    position: absolute;
+    top:30px;
+}
+.pirate-up-down{
+    position: absolute;
+    width:86px;
+    height:150px;
+    left:66px;
+    z-index: -1;
+}
+.left-arm{
+    position: absolute;
+    width: 33px;
+    height: 150px;
+    background: url(../images/left-arm.png);
+}
+.right-arm {
+    position: absolute;
+    width: 33px;
+    height: 150px;
+    left: 45px;
+    background: url(../images/right-arm.png);
+}
+.pirate-ship{
+    position:absolute;
+    width:150px;
+    height:58px;
+    top: 125px;
+    left: 34px;
+    background: url(../images/pirate-05.png);
+    z-index: -1;
+}
+.pirate-base{
+    width: 212px;
+    height:199px;
+    background: url(../images/pirate-01.png);
+}
+.pirate-bottom{
+    width: 220px;
+    height:16px;
+    background: url(../images/pirate-02.png);
+}
+.wagon{
+    position: absolute;
+    width: 34px;
+    height: 14px;
+    background: url(../images/roller-coaster-wagon.png);
+    top: 168px;
+    left: 0;
+    z-index: 3;
+}
+
+.sky{
+    position: relative;
+    width:100%;
+    height: 225px;
+    background: rgb(253, 255, 255);
+    background: linear-gradient(0deg, rgba(253, 255, 255, 1) 29%, rgba(128, 212, 211, 1) 96%);
+}
+.rail{
+    position: absolute;
+    width: 100%;
+    height: 85px;
+    background: url(../images/rail.png) no-repeat;
+    bottom: 0;
+    z-index: 2;
+    background-position: 0 10px;
+}
+.popcorn{
+    position: absolute;
+    width: 30px;
+    height: 45px;
+    top: 188px;
+    left: 180px;
+    background: url(../images/pop-corn.png);
+    z-index: 4;
+}
+.game01{
+    position: absolute;
+    width: 46px;
+    height: 54px;
+    top: 178px;
+    left: 280px;
+    background:url(../images/game-01.png);
+    z-index: 4;
+}
+.game02 {
+    position: absolute;
+    width: 35px;
+    height: 41px;
+    top: 189px;
+    left: 566px;
+    background: url(../images/game-02.png);
+    z-index: 4;
+}
+.game03 {
+    position: absolute;
+    width: 51px;
+    height: 60px;
+    top: 170px;
+    left: 595px;
+    background: url(../images/game-03.png);
+    z-index: 4;
+}
+.car{
+    position: absolute;
+    width: 46px;
+    height: 43px;
+    background: url(../images/car.png);
+    top: 188px;
+    left: 330px;
+    z-index: 4;
+}
+.carpa{
+    position: absolute;
+    width:59px;
+    height: 74px;
+    background: url(../images/carpa.png);
+    top: 156px;
+    left: 458px;
+    z-index: 4;
+}
+.carousel-container{
+    position: absolute;
+    top: 117px;
+    left: 510px;
+     z-index: 3;
+}
+.carousel{
+    position: absolute;
+    width: 76px;
+    height: 109px;
+    background: url(../images/horses-03.png);
+}
+.bar{
+    position: absolute;
+    top: 30px;
+    left: 32px;
+    width: 11px;
+    height: 72px;
+    background: url(../images/horses-01.png);
+    z-index: -1;
+}
+.horses{
+    position: absolute;
+    width:41px;
+    height: 30px;
+    background: url(../images/horses-02.png);
+}
+#horse01{
+    top: 50px;
+    left: -8px;
+}
+#horse02 {
+    top: 70px;
+    left: 45px;
+}
+.trees{
+    position: relative;
+    z-index: 3;
+}
+.tree01{
+    position: absolute;
+    width:65px;
+    height: 114px;
+    background: url(../images/tree-01.png);
+}
+.tree02 {
+    position: absolute;
+    width: 49px;
+    height: 81px;
+    background: url(../images/tree-02.png);
+}
+.tree03 {
+    position: absolute;
+    width: 80px;
+    height: 53px;
+    background: url(../images/tree-03.png);
+}
+.tree04{
+    position: absolute;
+    width: 68px;
+    height: 58px;
+    background: url(../images/tree-04.png);
+}
+.flowers{
+    position: absolute;
+    width:59px;
+    height: 19px;
+    background: url(../images/flowers.png);
+}
+#flowers01{
+    top: -4px;
+    left: 68px;
+}
+#flowers02{
+    top: -2px;
+    left: 405px;
+}
+#tree01{
+    top: -92px;
+    left: -15px;
+}
+#tree02{
+    top: -45px;
+    left: 25px;
+}
+#tree03{
+    top: -37px;
+    left: 108px;
+}
+#tree04{
+    top: -68px;
+    left: 212px;
+}
+#tree05{
+    top: -36px;
+    left: 380px;
+}
+#tree06{
+    top: -102px;
+    left: 240px;
+    z-index: -1;
+}
+#tree07 {
+    top: -110px;
+    left: 600px;
+    z-index: -1;
+}
+.terrain{
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height:65px;
+    background: url(../images/terrain.png) no-repeat;
+    background-position: -1px -2px;
+}
+
+.green{
+    width: 100%;
+    height: 25px;
+    background: rgb(245, 255, 105);
+    background: linear-gradient(0deg, rgba(245, 255, 105, 1) 19%, rgba(172, 219, 0, 1) 40%, rgba(74, 150, 0, 1) 80%);
+}

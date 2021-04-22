@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Animation</title>
+</head>
+<body>
+    
+    
+   <div class="container">
+       
+       <div class="robot"></div>
+       <div id="j01" class="joystick-container">
+           <div id="t01" class="joystick-top"></div>
+           <div class="joystick-bottom"></div>
+       </div>
+        <div id="j02" class="joystick-container">
+            <div id="t02" class="joystick-top"></div>
+            <div class="joystick-bottom"></div>
+        </div>
+        <div id="j03" class="joystick-container">
+            <div id="t03" class="joystick-top"></div>
+            <div class="joystick-bottom"></div>
+        </div>
+    
+       <div class="sky">
+            
+            <div class="pirate-container">
+                <div class="pirate-top">
+                    <div class="pirate-up-down">
+                        <div class="pirate-arms left-arm"></div>
+                        <div class="pirate-arms right-arm"></div>
+                    </div>
+                    <div class="pirate-ship"></div>
+                </div>
+                <div class="pirate-base"></div>
+                <div class="pirate-bottom"></div>
+            </div>
+
+            <!-- svg -->
+            <svg id="wagon-path" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 651.68 35.52">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            fill: none;
+                            stroke:none;
+                            stroke-miterlimit: 10;
+                        }
+                    </style>
+                </defs>
+                <g id="Layer_3" data-name="Layer 3">
+                    <path id="path" class="cls-1"
+                        d="M-8.33,332.88S.94,341.1,50.3,318.72s78.24-15.3,78.24-15.3l41.55,15.07,24.09,13.31s30.87,9.6,70.18,2.4S303,314.74,303,314.74l39.63-12.05,35,.84,38,14.64,19.78,10.13,21.35,6,166.22,1.36L636,333.71l6.75-4.28"
+                        transform="translate(8.67 -301.85)" />
+                </g>
+            </svg>
+            <!-- svg -->
+
+            <div class="wagon"></div>
+            <div class="rail"></div>
+            <div class="popcorn"></div>
+            <div class="game01"></div>
+            <div class="game02"></div>
+            <div class="game03"></div>
+            <div class="car"></div>
+            <div class="carpa"></div>
+            <div class="carousel-container">
+                <div class="carousel"></div>
+                <div class="bar"></div>
+                <div id="horse01" class="horses"></div>
+                <div id="horse02" class="horses"></div>
+            </div>
+            <div class="trees">
+                <div id="tree01" class="tree01"></div>
+                <div id="tree04" class="tree02"></div>
+                <div id="tree03" class="tree03"></div>
+                <div id="tree02" class="tree04"></div>
+                <div id="tree06" class="tree01"></div>
+                <div id="tree07" class="tree01"></div>
+                <div id="flowers01" class="flowers"></div>
+                <div id="tree05" class="tree03"></div>
+                <div id="flowers02" class="flowers"></div>
+            </div>
+            <div class="terrain"></div>
+        </div>
+        <div class="green"></div>
+   </div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js"></script>
+
+   <script src="./js/animation.js"></script>
+
+</body>
+</html>
